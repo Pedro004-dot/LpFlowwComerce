@@ -7,8 +7,11 @@
   /* background-color: #002140; */
   color: white;
   font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
 }
-
+body{
+  background-image: linear-gradient(to right,#070506,#0b1d41,#07070c );
+}
 .container {
   width: 100%;
   display: flex;
