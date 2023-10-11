@@ -49,15 +49,35 @@ header h1 {
   border-bottom: 2px solid white;
 }
 
-span {
-  color: #00afef;
-  font-family: "Barlow", "Helvetica Neue", Helvetica, Arial;
-  font-size: 40px;
+
+.primeiraParte{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 5%;
 }
+.primeiraParte .principal{
+font-size: 66px;
+}
+
+.primeiraParte span{
+  color: #00afef;
+}
+.primeiraParte img{
+  width: 100%;
+  height: auto;
+}
+span:hover {
+  color: #eef233;
+  transition: 1.5ms;
+  border-bottom: 2px solid white;
+}
+
 /* parte do carrosel */
 #carouselExampleRide {
   width: 100%;
   height: 10%;
+  margin-top: 5%
 }
 /* comeco dos textos  */
 .textoInicial {
@@ -68,15 +88,10 @@ span {
   width: 100%;
   padding: 5%;
 }
-.primeiroParagrafo {
-  font-family: "Roboto", sans-serif;
-}
-#sucess-digital:hover {
-  color: #eef233;
-  transition: 1.5ms;
-  border-bottom: 2px solid white;
-}
+
+
 #botao {
+  text-decoration: none !important;
   width: 50%;
   height: 20%;
   border-radius: 10px;
@@ -89,14 +104,20 @@ span {
   transition: 1.5ms;
   border: 2px solid white;
 }
-.btn a {
-  text-decoration: none;
-  color: #002140;
+.segundoTexto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.btn a:hover {
+.segundoTexto p{
+  font-size: 66px;
   color: #eef233;
-}
-/* os nossos servicos */
+  }
+  .segundoTexto span{
+    color: #00afef;
+  }
+
 .nossosServicos {
   width: 100%;
   display: flex;
@@ -198,11 +219,10 @@ i {
     #001076
   );
 }
-
+/* footer{
+  background-color: #292424;
+} */
 @media (max-width: 1200px) {
-  .primeiroParagrafo {
-    font-size: 30px;
-  }
   .quadrado p {
     font-size: 15px;
   }
@@ -213,19 +233,36 @@ i {
     width: 70%;
     margin: 8px;
   }
+  .primeiraParte{
+    margin: 10%;
+  }
+  .segundoTexto p{
+    font-size: 56px;
+    color: #eef233;
+    }
+    .segundoTexto span{
+      color: #00afef;
+    }
 }
 @media (max-width: 990px) {
   header img {
     width: 60%;
   }
-  span {
-    color: #00afef;
-    font-family: "Barlow", "Helvetica Neue", Helvetica, Arial;
-    font-size: 25px;
-  }
-  .primeiroParagrafo {
-    font-size: 20px;
-  }
+  .primeiraParte .principal{
+    font-size: 50px;
+    }
+    .primeiraParte span{
+      font-size: 50px;
+      color: #00afef;
+    }
+    .segundoTexto p{
+      font-size: 45px;
+      color: #eef233;
+      }
+      .segundoTexto span{
+        font-size: 45px;
+        color: #00afef;
+      }
 
   .quadrados {
     display: grid;
@@ -260,11 +297,30 @@ i {
   header img {
     width: 50%;
   }
-  .primeiroParagrafo p {
-    font-size: 42px;
+  .primeiraParte{
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    
   }
-  .primeiroParagrafo span {
+  .primeiraParte .principal{
     font-size: 56px;
+    }
+    .primeiraParte span{
+      font-size: 60px;
+      color: #00afef;
+    }
+    .segundoTexto p{
+      font-size: 38px;
+      color: #eef233;
+      }
+      .segundoTexto span{
+        font-size: 38px;
+        color: #00afef;
+      }
+  .primeiraParte img{
+    display: none;
   }
   .nossosServicos {
     margin: 5px;
@@ -280,15 +336,67 @@ i {
     width: 100%;
     height: 1%;
   }
-  .primeiroParagrafo {
-    font-size: 15px;
-  }
-  span {
-    color: #00afef;
-    font-family: "Barlow", "Helvetica Neue", Helvetica, Arial;
-    font-size: 20px;
-  }
   .icons p {
     font-size: 15px;
   }
+}
+@media(max-width:425px){
+  .primeiraParte{
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .primeiraParte .principal{
+    font-size: 46px;
+    }
+    .primeiraParte span{
+      font-size: 54px;
+      color: #00afef;
+    }
+    .primeiraParte p{
+      font-size: 12px;
+    }
+    .segundoTexto p{
+      font-size: 38px;
+      color: #eef233;
+      }
+      .segundoTexto span{
+        font-size: 38px;
+        color: #00afef;
+      }
+  #botao{
+    text-decoration: none;
+    width: 80%;
+    background-color:#eef233;
+    background-color: #eef233;
+  color: #002140;
+}
+#botao:hover {
+  color: #eef233;
+  background-color: #002140;
+  transition: 1.5ms;
+  border: 2px solid white;
+  }
+}
+@media(max-width:320px){
+  .primeiraParte .principal{
+    font-size: 36px;
+    }
+  .primeiraParte span{
+      font-size: 44px;
+      color: #00afef;
+    }
+  .primeiraParte p{
+    font-size: 10px;
+  }
+  .segundoTexto p{
+    font-size: 28px;
+    color: #eef233;
+    }
+  .segundoTexto span{
+      font-size: 28px;
+      color: #00afef;
+    }
 }
