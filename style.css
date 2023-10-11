@@ -54,7 +54,6 @@ header h1 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 5%;
 }
 .primeiraParte .principal{
 font-size: 66px;
@@ -233,9 +232,7 @@ i {
     width: 70%;
     margin: 8px;
   }
-  .primeiraParte{
-    margin: 10%;
-  }
+  
   .segundoTexto p{
     font-size: 56px;
     color: #eef233;
