@@ -199,28 +199,37 @@ i {
   color: white;
 }
 .icons a i {
-  background-image: linear-gradient(
-    to top,
-    #010b54,
-    #01082a,
-    #010939,
-    #000a47,
-    #001076
-  );
+  background-color: #01082a;
 }
 .icons p i {
-  background-image: linear-gradient(
-    to top,
-    #010b54,
-    #01082a,
-    #010939,
-    #000a47,
-    #001076
-  );
+  background-color: #01082a;
 }
-/* footer{
-  background-color: #292424;
-} */
+footer{
+  background-color: #01082a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer img{
+margin: none;
+}
+footer .icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .icons a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  flex-wrap: wrap;
+}
 @media (max-width: 1200px) {
   .quadrado p {
     font-size: 15px;
