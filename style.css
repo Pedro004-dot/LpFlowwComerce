@@ -1,47 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
   color: white;
   font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* background-color: #000a47; */
 }
 
-.header-main{
-  background-image: linear-gradient(
-    135deg,
-    #010b54,
-    #01082a,
-    #010939,
-    #000a47,
-    #001076
-  );
+body {
+  background-image: linear-gradient(to bottom right, #010b54, #010939, #001076);
+  background-repeat: no-repeat;
 }
 .container {
-  display:relative !important;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 }
 /* Parte superior */
 header {
   width: 100%;
+  height: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5%;
 }
 header h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 #titulo {
   color: #00afef;
   font-family: "Barlow", "Helvetica Neue", Helvetica, Arial;
-  font-size: 50px;
+  font-size: 40px;
 }
 #titulo:hover {
   transition: 1.5ms;
@@ -49,20 +37,19 @@ header h1 {
   border-bottom: 2px solid white;
 }
 
-
-.primeiraParte{
+.primeiraParte {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.primeiraParte .principal{
-font-size: 66px;
+.primeiraParte .principal {
+  font-size: 66px;
 }
 
-.primeiraParte span{
+.primeiraParte span {
   color: #00afef;
 }
-.primeiraParte img{
+.primeiraParte img {
   width: 100%;
   height: auto;
 }
@@ -71,12 +58,20 @@ span:hover {
   transition: 1.5ms;
   border-bottom: 2px solid white;
 }
+.entregamosBrasil {
+  display: flex;
+  flex-direction: row;
+}
+.entregamosBrasil #Principal{
+  font-size: 50px;
+  color:#eef233;
+}
 
 /* parte do carrosel */
 #carouselExampleRide {
-  width: 100%;
-  height: 10%;
-  margin-top: 5%
+  width: 70%;
+  height: 5%;
+  margin-top: 5%;
 }
 /* comeco dos textos  */
 .textoInicial {
@@ -87,10 +82,8 @@ span:hover {
   width: 100%;
   padding: 5%;
 }
-
-
-#botao {
-  text-decoration: none !important;
+#botao{
+text-decoration: none !important;
   width: 50%;
   height: 20%;
   border-radius: 10px;
@@ -103,19 +96,19 @@ span:hover {
   transition: 1.5ms;
   border: 2px solid white;
 }
-.segundoTexto{
+.segundoTexto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.segundoTexto p{
+.segundoTexto #revolucaomkt{
   font-size: 66px;
   color: #eef233;
-  }
-  .segundoTexto span{
-    color: #00afef;
-  }
+}
+.segundoTexto span {
+  color: #00afef;
+}
 
 .nossosServicos {
   width: 100%;
@@ -222,93 +215,146 @@ i {
   box-shadow: 2px 2px 2px #c0bdbd;
 }
 
-.icon .fab{
-  background-color:  #01e675;
+.icon .fab {
+  background-color: #01e675;
   padding-top: 9px;
 }
 
-.icon:hover{
+.icon:hover {
   /* background-color: #fff;
   color: #029e3b; */
   font-weight: 900;
   box-shadow: 2px 2px 20px #5fe690;
 }
-footer{
+footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color:#010b54;
 }
-footer img{
-margin: none;
-background-color:#010b54;
+footer img {
+  margin: none;
+  background-color: transparent;
+  width: 30%;
 }
-footer .icons{
+footer .icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+footer .links{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color:#010b54;
 }
-footer .icons a {
+footer .links a {
+  margin: 3px;
+}
+footer .icons p{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
   flex-wrap: wrap;
-  background-color:#010b54;
-  
+  /* font-size:15px; */
 }
+
+
 .icons a i {
-   background-color:#010b54;
+  background-color: transparent;
 }
 .icons p i {
-   background-color:#010b54;
+  background-color: transparent;
 }
 @media (max-width: 1200px) {
   .quadrado p {
     font-size: 15px;
   }
-  header {
+  /* header {
     padding: 2.5%;
-  }
+  } */
   .quadrado {
     width: 70%;
     margin: 8px;
   }
-  
-  .segundoTexto p{
+  .entregamosBrasil {
+    display: flex;
+    flex-direction: row;
+  }
+  .entregamosBrasil #Principal{
+    font-size: 45px;
+    color:#eef233;
+  }
+  #carouselExampleRide {
+    width: 70%;
+    height: 5%;
+    margin-top: 5%;
+  }
+   .segundoTexto  #revolucaomkt{
     font-size: 56px;
     color: #eef233;
-    }
-    .segundoTexto span{
-      color: #00afef;
-    }
+  }
+  .segundoTexto span {
+    font-size: 45px;
+    color: #00afef;
+  }
+  footer img {
+    width: 30%;
+  }
+}
+@media(min-width:1024px){
+  .mobileOnly{
+    display: none;
+  }
+  .desktopOnly{
+    display: block;
+  }
+}
+@media(max-width:1024px){
+  .mobileOnly{
+    display: block;
+  }
+  .desktopOnly{
+    display: none;
+  }
 }
 @media (max-width: 990px) {
   header img {
     width: 60%;
   }
-  .primeiraParte .principal{
+  .primeiraParte .principal {
     font-size: 50px;
-    }
-    .primeiraParte span{
-      font-size: 50px;
-      color: #00afef;
-    }
-    .segundoTexto p{
-      font-size: 45px;
-      color: #eef233;
-      }
-      .segundoTexto span{
-        font-size: 45px;
-        color: #00afef;
-      }
+  }
+  .primeiraParte span {
+    font-size: 50px;
+    color: #00afef;
+  }
+  .entregamosBrasil {
+  display: flex;
+  flex-direction: column;
+}
+  #carouselExampleRide {
+    width: 80%;
+    height: 8%;
+    margin-top: 5%;
+  }
+  .segundoTexto  #revolucaomkt{
+    font-size: 45px;
+    color: #eef233;
+  }
+  .entregamosBrasil #Principal{
+    font-size: 45px;
+    color:#eef233;
+  }
+  
+  .segundoTexto span {
+    font-size: 45px;
+    color: #00afef;
+  }
 
   .quadrados {
     display: grid;
@@ -338,34 +384,52 @@ footer .icons a {
     align-items: center;
     text-align: center;
   }
+  footer img {
+    width: 30%;
+  }
 }
 @media (max-width: 772px) {
+  header h1 {
+    font-size: 35px;
+  }
+  header #titulo {
+    font-size: 45px;
+  }
   header img {
     width: 50%;
   }
-  .primeiraParte{
+  .primeiraParte {
     width: 100%;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
-    
   }
-  .primeiraParte .principal{
+  .primeiraParte .principal {
     font-size: 56px;
-    }
-    .primeiraParte span{
-      font-size: 60px;
-      color: #00afef;
-    }
-    .segundoTexto p{
-      font-size: 38px;
-      color: #eef233;
-      }
-      .segundoTexto span{
-        font-size: 38px;
-        color: #00afef;
-      }
-  .primeiraParte img{
+  }
+  .primeiraParte span {
+    font-size: 60px;
+    color: #00afef;
+  }
+  #carouselExampleRide {
+    width: 70%;
+    height: 8%;
+    margin-top: 5%;
+  }
+  .segundoTexto #revolucaomkt {
+    font-size: 38px;
+    color: #eef233;
+  }
+  .entregamosBrasil #Principal{
+    font-size: 38px;
+    color:#eef233;
+  }
+  
+  .segundoTexto span {
+    font-size: 38px;
+    color: #00afef;
+  }
+  .primeiraParte img {
     display: none;
   }
   .nossosServicos {
@@ -385,73 +449,97 @@ footer .icons a {
   .icons p {
     font-size: 15px;
   }
-  footer p{
+  footer p {
     font-size: 12.5px;
   }
 }
-@media(max-width:425px){
-  .primeiraParte{
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 25px;
+  }
+  header #titulo {
+    font-size: 35px;
+  }
+  .primeiraParte {
     width: 100%;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
-    
   }
-  .primeiraParte .principal{
+  .primeiraParte .principal {
     font-size: 46px;
-    }
-    .primeiraParte span{
-      font-size: 54px;
-      color: #00afef;
-    }
-    .primeiraParte p{
-      font-size: 12px;
-    }
-    .segundoTexto p{
-      font-size: 38px;
-      color: #eef233;
-      }
-      .segundoTexto span{
-        font-size: 38px;
-        color: #00afef;
-      }
-  #botao{
-    text-decoration: none;
-    width: 80%;
-    background-color:#eef233;
-    background-color: #eef233;
-  color: #002140;
-}
-#botao:hover {
-  color: #eef233;
-  background-color: #002140;
-  transition: 1.5ms;
-  border: 2px solid white;
   }
-  footer p{
+  .primeiraParte span {
+    font-size: 54px;
+    color: #00afef;
+  }
+  .primeiraParte p {
     font-size: 12px;
   }
-  footer a{
+  .entregamosBrasil #Principal{
+    font-size: 38px;
+    color:#eef233;
+  }
+  
+  .segundoTexto  #revolucaomkt {
+    font-size: 38px;
+    color: #eef233;
+  }
+  .segundoTexto span {
+    font-size: 38px;
+    color: #00afef;
+  }
+  #botao {
+    text-decoration: none;
+    width: 80%;
+    background-color: #eef233;
+    background-color: #eef233;
+    color: #002140;
+  }
+  #botao:hover {
+    color: #eef233;
+    background-color: #002140;
+    transition: 1.5ms;
+    border: 2px solid white;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer a {
     font-size: 10px;
   }
 }
-@media(max-width:320px){
-  .primeiraParte .principal{
+@media (max-width: 320px) {
+  header h1 {
+    font-size: 20px;
+  }
+  header #titulo {
+    font-size: 25px;
+  }
+  .primeiraParte .principal {
     font-size: 36px;
-    }
-  .primeiraParte span{
-      font-size: 44px;
-      color: #00afef;
-    }
-  .primeiraParte p{
+  }
+  .primeiraParte span {
+    font-size: 44px;
+    color: #00afef;
+  }
+  .primeiraParte p {
     font-size: 10px;
   }
-  .segundoTexto p{
+  .entregamosBrasil #Principal{
+    font-size: 28px;
+    color:#eef233;
+  }
+  
+  .segundoTexto #revolucaomkt{
     font-size: 28px;
     color: #eef233;
-    }
-  .segundoTexto span{
-      font-size: 28px;
-      color: #00afef;
-    }
+  }
+  .segundoTexto span {
+    font-size: 28px;
+    color: #00afef;
+  }
+  footer p {
+    font-size: 4px;
+  }
 }
